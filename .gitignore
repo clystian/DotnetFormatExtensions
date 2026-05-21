@@ -1,0 +1,28 @@
+## .NET
+bin/
+obj/
+staging/
+*.nupkg
+*.snupkg
+*.user
+*.suo
+*.cache
+*.log
+*.lock.json
+
+## IDE
+.vs/
+.vscode/
+*.sln.DotSettings.user
+*.csproj.DotSettings
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Build artifacts
+*.dll
+*.exe
+*.pdb
+*.xml
+*.deps.json
