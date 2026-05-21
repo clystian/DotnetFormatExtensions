@@ -1,4 +1,4 @@
-# Formatextension.Analyzers
+# FormatExtension.Analyzers
 
 A Roslyn analyzer that enforces multi-line formatting for C# initializers. Integrates seamlessly with `dotnet format analyzers` to automatically reformat single-line initializers into a clean, vertical layout.
 
@@ -11,13 +11,13 @@ A Roslyn analyzer that enforces multi-line formatting for C# initializers. Integ
 ## Installation
 
 ```bash
-dotnet add package Formatextension.Analyzers
+dotnet add package FormatExtension.Analyzers
 ```
 
 Or add a `PackageReference` to your `.csproj`:
 
 ```xml
-<PackageReference Include="Formatextension.Analyzers" Version="1.0.0" PrivateAssets="all" />
+<PackageReference Include="FormatExtension.Analyzers" Version="1.0.0" PrivateAssets="all" />
 ```
 
 The package adds zero runtime dependencies — it only runs at build time and during `dotnet format`.

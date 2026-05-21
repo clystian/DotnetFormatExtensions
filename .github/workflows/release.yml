@@ -33,19 +33,19 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore Formatextension.slnx
+        run: dotnet restore FormatExtension.slnx
 
       - name: Build
-        run: dotnet build Formatextension.slnx --configuration Release --no-restore
+        run: dotnet build FormatExtension.slnx --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test Formatextension.slnx --configuration Release --no-build --verbosity normal
+        run: dotnet test FormatExtension.slnx --configuration Release --no-build --verbosity normal
 
       - name: Set version from tag
         run: echo "PACKAGE_VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
 
       - name: Pack
-        run: dotnet pack src/Formatextension.Analyzers/Formatextension.Analyzers.csproj --configuration Release --no-build --output staging/ /p:Version=${{ env.PACKAGE_VERSION }}
+        run: dotnet pack src/FormatExtension.Analyzers/FormatExtension.Analyzers.csproj --configuration Release --no-build --output staging/ /p:Version=${{ env.PACKAGE_VERSION }}
 
       - name: Push to NuGet
         run: |
