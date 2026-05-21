@@ -1,0 +1,2 @@
+[*.cs]
+dotnet_diagnostic.FMT0001.severity = warning
