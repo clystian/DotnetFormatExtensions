@@ -2,10 +2,10 @@ using System.Threading.Tasks;
 using Microsoft.CodeAnalysis.Testing;
 using Xunit;
 using VerifyCS = Microsoft.CodeAnalysis.CSharp.Testing.XUnit.CodeFixVerifier<
-    Formatextension.Analyzers.InitializerFormattingAnalyzer,
-    Formatextension.Analyzers.InitializerFormattingCodeFix>;
+    FormatExtension.Analyzers.InitializerFormattingAnalyzer,
+    FormatExtension.Analyzers.InitializerFormattingCodeFix>;
 
-namespace Formatextension.Analyzers.Tests;
+namespace FormatExtension.Analyzers.Tests;
 
 public class InitializerFormattingCodeFixTests
 {

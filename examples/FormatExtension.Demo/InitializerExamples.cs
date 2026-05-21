@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Formatextension.Demo;
+namespace FormatExtension.Demo;
 
 public class InitializerExamples
 {

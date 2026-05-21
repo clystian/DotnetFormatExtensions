@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Microsoft.CodeAnalysis.Testing;
 using Xunit;
-using VerifyCS = Microsoft.CodeAnalysis.CSharp.Testing.XUnit.AnalyzerVerifier<Formatextension.Analyzers.InitializerFormattingAnalyzer>;
+using VerifyCS = Microsoft.CodeAnalysis.CSharp.Testing.XUnit.AnalyzerVerifier<FormatExtension.Analyzers.InitializerFormattingAnalyzer>;
 
-namespace Formatextension.Analyzers.Tests;
+namespace FormatExtension.Analyzers.Tests;
 
 public class InitializerFormattingAnalyzerTests
 {

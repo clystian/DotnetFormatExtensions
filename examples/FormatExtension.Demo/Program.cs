@@ -1,4 +1,4 @@
-using Formatextension.Demo;
+using FormatExtension.Demo;
 
 // The analyzer checks all these initializers.
 // Run: dotnet format analyzers --diagnostics FMT0001 --verify-no-changes

@@ -1,11 +1,11 @@
 <Solution>
   <Folder Name="/examples/">
-    <Project Path="examples/Formatextension.Demo/Formatextension.Demo.csproj" />
+    <Project Path="examples/FormatExtension.Demo/FormatExtension.Demo.csproj" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/Formatextension.Analyzers/Formatextension.Analyzers.csproj" />
+    <Project Path="src/FormatExtension.Analyzers/FormatExtension.Analyzers.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/Formatextension.Analyzers.Tests/Formatextension.Analyzers.Tests.csproj" />
+    <Project Path="tests/FormatExtension.Analyzers.Tests/FormatExtension.Analyzers.Tests.csproj" />
   </Folder>
 </Solution>

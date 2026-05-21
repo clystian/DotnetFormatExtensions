@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Formatextension.Analyzers\Formatextension.Analyzers.csproj" />
+    <ProjectReference Include="..\..\src\FormatExtension.Analyzers\FormatExtension.Analyzers.csproj" />
   </ItemGroup>
 </Project>

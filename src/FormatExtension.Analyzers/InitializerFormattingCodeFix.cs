@@ -10,7 +10,7 @@ using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Formatextension.Analyzers;
+namespace FormatExtension.Analyzers;
 
 [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(InitializerFormattingCodeFix))]
 [Shared]
