@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore Formatextension.slnx
+
+      - name: Build
+        run: dotnet build Formatextension.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test Formatextension.slnx --configuration Release --no-build --verbosity normal
+
+      - name: Pack
+        run: dotnet pack src/Formatextension.Analyzers/Formatextension.Analyzers.csproj --configuration Release --no-build --output staging/
+
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nupkg
+          path: staging/*.nupkg
+          retention-days: 7

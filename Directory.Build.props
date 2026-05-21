@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/clystian/DotnetFormatExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/clystian/DotnetFormatExtensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Formatextension Contributors</Authors>
+    <Copyright>Copyright © Formatextension Contributors</Copyright>
+  </PropertyGroup>
+</Project>
