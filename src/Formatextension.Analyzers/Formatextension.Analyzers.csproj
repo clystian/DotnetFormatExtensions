@@ -10,6 +10,7 @@
     <Description>Roslyn analyzer that enforces multi-line formatting of object, array, and collection initializers</Description>
     <PackageTags>roslyn;analyzer;codefix;formatting;dotnet-format</PackageTags>
     <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,5 +20,6 @@
 
   <ItemGroup>
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
