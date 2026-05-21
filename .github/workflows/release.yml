@@ -12,6 +12,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: deployment
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,8 +31,11 @@ jobs:
       - name: Test
         run: dotnet test Formatextension.slnx --configuration Release --no-build --verbosity normal
 
+      - name: Set version from tag
+        run: echo "PACKAGE_VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+
       - name: Pack
-        run: dotnet pack src/Formatextension.Analyzers/Formatextension.Analyzers.csproj --configuration Release --no-build --output staging/
+        run: dotnet pack src/Formatextension.Analyzers/Formatextension.Analyzers.csproj --configuration Release --no-build --output staging/ /p:Version=${{ env.PACKAGE_VERSION }}
 
       - name: Push to NuGet
         run: |
